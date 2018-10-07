@@ -6,10 +6,12 @@ module.exports = function longestConsecutiveLength(array) {
       }
     var c = 1;
     var res = 1;
+
      function compare(a,b){
       if(a>b) return 1;
       if(a<b) return -1;
       }
+      
     for (var i=0; i<array.length; i++){
       if(array[i]+1 == array[i+1]){
         c++;
